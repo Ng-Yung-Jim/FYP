@@ -34,7 +34,7 @@ for j in range(4):
     for k in range(82):
         partname = str(naming[j]) + str(k)
         instancename = partname + '-1'
-        i = j*84+k
+        i = j*82+k
         s1 = mdb.models['Ting9'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
         g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
         s1.setPrimaryObject(option=STANDALONE)
